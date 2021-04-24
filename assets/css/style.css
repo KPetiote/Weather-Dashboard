@@ -1,0 +1,19 @@
+.wrapper {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: rgb(247, 245, 245);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar-css {
+  padding: 1% 1% 0% 1%;
+}
+
+.main-css{
+  left:0;
+  padding-left: 18%;
+}

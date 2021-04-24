@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <title>Weather Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Jumbotron for Header -->
+    <header class="container-fluid bg-dark text-light p-3">
+        <div class="text-center">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+    <!-- Sidebar -->
+    <aside class="wrapper sidebar-css">
+        <nav id="sidebar">
+            <h3>Search for a City:</h3>
+            <div class="input-group mb-3">
+                <input id="city-search" class="form-control" type="search" placeholder="Search">
+                <div class="input-group-append">
+                <button id="search-button" class="btn btn-primary text-light" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+        <div class="row mt-3">
+            <div class="col-12">
+                <ul id="searchHistory" class="list-group"></ul>
+            </div>
+        </div>
+    </aside>     
+    <!-- Main Screen -->
+    <main>
+        <div id="weatherInformation" class="col-9 pb-4 pt-4 main-css">
+            <div class="row pb-3 mr-2 ml-2">
+                <!-- Displays current city information-->
+                <div id="cityInformation" class="col-12 border rounded px-3 py-3"></div>
+            </div>
+            <div class="row pb-2 pt-1">
+                <div class="col-12 ml-2">
+                    <h3>5-Day Forecast:</h3>
+                </div>
+            </div>
+            <!-- Adds 5 day forecast information below-->
+            <div id="fiveDayForecast" class="row pl-2"></div>
+        </div>
+    </main>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

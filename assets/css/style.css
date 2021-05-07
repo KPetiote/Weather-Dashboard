@@ -17,3 +17,7 @@
   left:0;
   padding-left: 18%;
 }
+
+#weatherInformation {
+  display: none;
+}
